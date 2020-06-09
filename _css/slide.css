@@ -1,0 +1,57 @@
+body {
+	font-family:Trebuchet MS;
+	font-size:14px;
+}
+
+
+#transp {
+	position: absolute;
+	top: 578px;
+	left: 468px;
+	width: 333px;
+	height: 25px;
+	background: #000000;
+	padding: 5px;
+	-moz-opacity:0.5;
+	opacity: .5;
+	filter:alpha(opacity=50);
+	-khtml-opacity: 0.5;
+}
+#tarja {
+	position: absolute;
+	top: 580px;
+	left: 468px;
+	width: 515px;
+	height: 50px;
+	padding: 5px;
+	z-index: 1;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#exibicao{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    width: 833px;
+    height: 400px;
+    background-color: #B22222;
+}
+
+.imgmenu {
+	border:2px solid #eee;
+	margin-top:2px;
+	margin-bottom:2px;
+	cursor: pointer;
+}
+.imgatual {
+	border:2px solid #eee;
+	margin-top:2px;
+	margin-bottom:2px;
+        
+}
+.imgclick {
+	border:2px solid #eee;
+	margin-top:2px;
+	margin-bottom:2px;
+}

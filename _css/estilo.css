@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'FonteLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+//muda a cor do corpo da pagina
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ffffff ;
+    color: rgba(0,0,0,1);
+}
+
+div#interface{
+    width: 900px;
+    background-color: #eee;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px ;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 180px;
+    background: url("../_imagens/banner.png")  100% 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 10px; 
+   
+}
+header#cabecalho h1{
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px ;
+}
+header#cabecalho h2{
+    font-family: Arial, sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 780px;
+    top: 70px ;
+}
+/*Formatação de imagens com legendas*/
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+
+
+/*configuração do corpo da pagina*/
+
+section#corpo{
+    display: block;
+    width: 900px;
+  
+    padding-right: 15px;
+}
+
+/*formatação do artigos*/
+
+article#noticia-principal h2{
+    font-size: 13px;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita{
+    text-align: right;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+footer#rodape{
+    border-top: 1px solid #606060;
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+}
+/*formatação de tabelas*/
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd{
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+    float: right;
+    display: block;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5)
+}
+
+
+/*conf do input*/
+
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    margin-bottom: 10pt;
+    background-color: rgba(255,255,255,.8);
+    border-top-left-radius:     0.3em 0.3em;
+    border-top-right-radius:    0.3em 0.3em;
+    border-bottom-right-radius: 0.3em 0.3em;
+    border-bottom-left-radius:  0.3em 0.3em;
+}
+
+input:hover, textarea:hover ,select:hover{
+    background-color: #dddddd;
+}
+/*login*/
+form#iFormLogin{
+    margin-left: -40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*cor do formulario do login*/
+.menu ul#iLoginUl{
+    background-color:rgba(235,250,255,0.7);
+}
+form#formlogin{
+    width: 300px;
+    margin-left: -29px;
+    margin-right: 8px;
+    margin-top: 20px;
+}
+
+/*Submit do cadastro de produto*/
+#fContato input.tEnviar{
+    position:relative;
+    bottom: 0.5em;
+    margin-left: 180px;
+    right:10px;
+    background-color:#f1ff00;
+    
+}
+
+
+/*DIALOG JQUERY*/
+.popupJquery input.text { margin-bottom:12px; width:95%; padding: .4em; }
+.popupJquery { padding:0; border:0; margin-top:25px; }
+.validateTips{margin: 0px 0px 0px 0px;}
+/* FIM DIALOG JQUERY*/

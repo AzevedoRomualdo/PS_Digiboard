@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+form{
+    width: 500px;
+    margin: auto;
+}
+
+input{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+    border-top-left-radius:     0.3em 0.3em;
+    border-top-right-radius:    0.3em 0.3em;
+    border-bottom-right-radius: 0.3em 0.3em;
+    border-bottom-left-radius:  0.3em 0.3em;
+}
+
+textArea{
+    
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+    border-top-left-radius:     0.3em 0.3em;
+    border-top-right-radius:    0.3em 0.3em;
+    border-bottom-right-radius: 0.3em 0.3em;
+    border-bottom-left-radius:  0.3em 0.3em;
+    
+}
+
+
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset{
+    border-color: #222;
+    margin: 20px;
+    border-top-left-radius:     0.3em 0.3em;
+    border-top-right-radius:    0.3em 0.3em;
+    border-bottom-right-radius: 0.3em 0.3em;
+    border-bottom-left-radius:  0.3em 0.3em;
+}
+
+fieldset#usuario{
+    background: #fafafa;
+    
+}
+/*estilos do div das opções de categoria*/
+.select-style{
+    padding: 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 155px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff; 
+    padding: 5px 8px;
+    width: 155px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: normal;
+            appearance: normal;
+}
+
+.select-style:focus{
+    outline: none;
+}
+
+/*arquivo*/
+
+.custom-file-input {
+	display: inline-block;
+	position: relative;
+	color: #533e00;
+}
+.custom-file-input input {
+	visibility: hidden;
+	width: 100px
+}
+.custom-file-input:before {
+	content: 'Carregar imagem...';
+	display: block;
+	background: -webkit-linear-gradient( -180deg, #ffdc73, #febf01);
+	background: -o-linear-gradient( -180deg, #ffdc73, #febf01);
+	background: -moz-linear-gradient( -180deg, #ffdc73, #febf01);
+	background: linear-gradient( -180deg, #ffdc73, #febf01);
+	border: 3px solid #dca602;
+	border-radius: 10px;
+	padding: 5px 0px;
+	outline: none;
+	white-space: nowrap;
+	cursor: pointer;
+	text-shadow: 1px 1px rgba(255,255,255,0.7);
+	font-weight: bold;
+	text-align: left;
+	font-size: 10pt;
+	position: absolute;
+	left: 0;
+	right: 0;
+        width: 230px;
+}
+.custom-file-input:hover:before {
+	border-color: #febf01;
+}
+.custom-file-input:active:before {
+	background: #febf01;
+}
